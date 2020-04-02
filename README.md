@@ -1,6 +1,6 @@
 # aurora-snippets package
 
-Adds snippets for creating D&D 5e Aurora Builder .xml files. Port of swdriessen's VS Code snippets. Simply install the package and you should be able to use the snippets.
+Adds snippets for creating D&D 5e Aurora Builder .xml files. Port of swdriessen's VS Code snippets. Install the package and you should be able to use the snippets. It's also recommended to change the "Keymap For Confirming A Suggestion" in the autocomplete-plus package settings
 
 ## What follows is swdriessen's original readme:
 
@@ -29,4 +29,4 @@ Snippets start with **aurora:** and work in xml files (set xml language mode on 
 	- armor proficiencies
 	- saving throw proficiencies
 	- resistance conditions
-- element snippets (source, spell, language, background, background feature, more to be added overtime)
+- element snippets (source, spell, language, background, background feature)
