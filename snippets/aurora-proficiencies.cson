@@ -1,1 +1,360 @@
 '.text.xml':
+
+  	'aurora:grant-proficiency-acrobatics':
+  		'prefix': 'aurora:grant-proficiency-acrobatics'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_ACROBATICS\" />
+  		"""
+
+  	'aurora:grant-proficiency-animalhandling':
+  		'prefix': 'aurora:grant-proficiency-animalhandling'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_ANIMALHANDLING\" />
+  		"""
+
+  	'aurora:grant-proficiency-arcana':
+  		'prefix': 'aurora:grant-proficiency-arcana'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_ARCANA\" />
+  		"""
+
+  	'aurora:grant-proficiency-athletics':
+  		'prefix': 'aurora:grant-proficiency-athletics'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_ATHLETICS\" />
+  		"""
+
+  	'aurora:grant-proficiency-deception':
+  		'prefix': 'aurora:grant-proficiency-deception'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_DECEPTION\" />
+  		"""
+
+  	'aurora:grant-proficiency-history':
+  		'prefix': 'aurora:grant-proficiency-history'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_HISTORY\" />
+  		"""
+
+  	'aurora:grant-proficiency-insight':
+  		'prefix': 'aurora:grant-proficiency-insight'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_INSIGHT\" />
+  		"""
+
+  	'aurora:grant-proficiency-intimidation':
+  		'prefix': 'aurora:grant-proficiency-intimidation'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_INTIMIDATION\" />
+  		"""
+
+  	'aurora:grant-proficiency-investigation':
+  		'prefix': 'aurora:grant-proficiency-investigation'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_INVESTIGATION\" />
+  		"""
+
+  	'aurora:grant-proficiency-medicine':
+  		'prefix': 'aurora:grant-proficiency-medicine'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_MEDICINE\" />
+  		"""
+
+  	'aurora:grant-proficiency-nature':
+  		'prefix': 'aurora:grant-proficiency-nature'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_NATURE\" />
+  		"""
+
+  	'aurora:grant-proficiency-perception':
+  		'prefix': 'aurora:grant-proficiency-perception'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_PERCEPTION\" />
+  		"""
+
+  	'aurora:grant-proficiency-performance':
+  		'prefix': 'aurora:grant-proficiency-performance'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_PERFORMANCE\" />
+  		"""
+
+  	'aurora:grant-proficiency-persuasion':
+  		'prefix': 'aurora:grant-proficiency-persuasion'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_PERSUASION\" />
+  		"""
+
+  	'aurora:grant-proficiency-religion':
+  		'prefix': 'aurora:grant-proficiency-religion'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_RELIGION\" />
+  		"""
+
+  	'aurora:grant-proficiency-sleightofhand':
+  		'prefix': 'aurora:grant-proficiency-sleightofhand'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_SLEIGHTOFHAND\" />
+  		"""
+
+  	'aurora:grant-proficiency-stealth':
+  		'prefix': 'aurora:grant-proficiency-stealth'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_STEALTH\" />
+  		"""
+
+  	'aurora:grant-proficiency-survival':
+  		'prefix': 'aurora:grant-proficiency-survival'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SKILL_SURVIVAL\" />
+  		"""
+
+  	'aurora:grant-proficiency-armor-light':
+  		'prefix': 'aurora:grant-proficiency-armor-light'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR\" />
+  		"""
+
+  	'aurora:grant-proficiency-armor-medium':
+  		'prefix': 'aurora:grant-proficiency-armor-medium'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR\" />
+  		"""
+
+  	'aurora:grant-proficiency-armor-heavy':
+  		'prefix': 'aurora:grant-proficiency-armor-heavy'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR\" />
+  		"""
+
+  	'aurora:grant-proficiency-armor-shields':
+  		'prefix': 'aurora:grant-proficiency-armor-shields'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS\" />
+  		"""
+
+
+  	'aurora:grant-proficiency-weapon-simple':
+  		'prefix': 'aurora:grant-proficiency-weapon-simple'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS\" />
+  		"""
+
+  	'aurora:grant-proficiency-weapon-martial':
+  		'prefix': 'aurora:grant-proficiency-weapon-martial'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS\" />
+  		"""
+
+  	'aurora:grant-proficiency-weapon-simple-melee':
+  		'prefix': 'aurora:grant-proficiency-weapon-simple-melee'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS\" />
+  		"""
+
+  	'aurora:grant-proficiency-weapon-martial-melee':
+  		'prefix': 'aurora:grant-proficiency-weapon-martial-melee'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS\" />
+  		"""
+
+  	'aurora:grant-proficiency-weapon-simple-ranged':
+  		'prefix': 'aurora:grant-proficiency-weapon-simple-ranged'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS\" />
+  		"""
+
+  	'aurora:grant-proficiency-weapon-martial-ranged':
+  		'prefix': 'aurora:grant-proficiency-weapon-martial-ranged'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS\" />
+  		"""
+
+
+
+  	'aurora:grant-proficiency-save-str':
+  		'prefix': 'aurora:grant-save-str'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SAVINGTHROW_STRENGTH\" />
+  		"""
+
+  	'aurora:grant-proficiency-save-dex':
+  		'prefix': 'aurora:grant-save-dex'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SAVINGTHROW_DEXTERITY\" />
+  		"""
+
+  	'aurora:grant-proficiency-save-con':
+  		'prefix': 'aurora:grant-save-con'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION\" />
+  		"""
+
+  	'aurora:grant-proficiency-save-int':
+  		'prefix': 'aurora:grant-save-int'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE\" />
+  		"""
+
+  	'aurora:grant-proficiency-save-wis':
+  		'prefix': 'aurora:grant-save-wis'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SAVINGTHROW_WISDOM\" />
+  		"""
+
+  	'aurora:grant-proficiency-save-cha':
+  		'prefix': 'aurora:grant-save-cha'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_SAVINGTHROW_CHARISMA\" />
+  		"""
+
+
+
+  	'aurora:grant-proficiency-alchemists-supplies':
+  		'prefix': 'aurora:grant-proficiency-alchemists-supplies'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES\" />
+  		"""
+
+  	'aurora:grant-proficiency-brewers-supplies':
+  		'prefix': 'aurora:grant-proficiency-brewers-supplies'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES\" />
+  		"""
+
+  	'aurora:grant-proficiency-calligraphers-supplies':
+  		'prefix': 'aurora:grant-proficiency-calligraphers-supplies'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES\" />
+  		"""
+
+  	'aurora:grant-proficiency-carpenters-tools':
+  		'prefix': 'aurora:grant-proficiency-carpenters-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-cartographers-tools':
+  		'prefix': 'aurora:grant-proficiency-cartographers-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-cobblers-tools':
+  		'prefix': 'aurora:grant-proficiency-cobblers-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-cooks-utensils':
+  		'prefix': 'aurora:grant-proficiency-cooks-utensils'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS\" />
+  		"""
+
+  	'aurora:grant-proficiency-glassblowers-tools':
+  		'prefix': 'aurora:grant-proficiency-glassblowers-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-jewelers-tools':
+  		'prefix': 'aurora:grant-proficiency-jewelers-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-leatherworkers-tools':
+  		'prefix': 'aurora:grant-proficiency-leatherworkers-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-masons-tools':
+  		'prefix': 'aurora:grant-proficiency-masons-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-painters-supplies':
+  		'prefix': 'aurora:grant-proficiency-painters-supplies'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES\" />
+  		"""
+
+  	'aurora:grant-proficiency-potters-tools':
+  		'prefix': 'aurora:grant-proficiency-potters-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-smiths-tools':
+  		'prefix': 'aurora:grant-proficiency-smiths-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-tinkers-tools':
+  		'prefix': 'aurora:grant-proficiency-tinkers-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-weavers-tools':
+  		'prefix': 'aurora:grant-proficiency-weavers-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-woodcarvers-tools':
+  		'prefix': 'aurora:grant-proficiency-woodcarvers-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-disguise-kit':
+  		'prefix': 'aurora:grant-proficiency-disguise-kit'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT\" />
+  		"""
+
+  	'aurora:grant-proficiency-forgery-kit':
+  		'prefix': 'aurora:grant-proficiency-forgery-kit'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT\" />
+  		"""
+
+  	'aurora:grant-proficiency-herbalism-kit':
+  		'prefix': 'aurora:grant-proficiency-herbalism-kit'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT\" />
+  		"""
+
+  	'aurora:grant-proficiency-poisoners-kit':
+  		'prefix': 'aurora:grant-proficiency-poisoners-kit'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT\" />
+  		"""
+
+  	'aurora:grant-proficiency-navigators-tools':
+  		'prefix': 'aurora:grant-proficiency-navigators-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-thieves-tools':
+  		'prefix': 'aurora:grant-proficiency-thieves-tools'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS\" />
+  		"""
+
+  	'aurora:grant-proficiency-vehicles-land':
+  		'prefix': 'aurora:grant-proficiency-vehicles-land'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND\" />
+  		"""
+
+  	'aurora:grant-proficiency-vehicles-water':
+  		'prefix': 'aurora:grant-proficiency-vehicles-water'
+  		'body': """
+  			<grant type=\"Proficiency\" id=\"ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER\" />
+  		"""
