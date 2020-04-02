@@ -1,7 +1,7 @@
 {
   "name": "aurora-snippets",
   "main": "./lib/aurora-snippets",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Adds snippets for creating Aurora .xml files",
   "keywords": [],
   "activationCommands": {},
