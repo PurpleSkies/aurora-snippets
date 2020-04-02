@@ -2,7 +2,7 @@
   "name": "aurora-snippets",
   "main": "./lib/aurora-snippets",
   "version": "0.6.0",
-  "description": "Adds snippets for creating Aurora .xml files",
+  "description": "Adds snippets for creating D&D 5e Aurora Builder .xml files. Port of swdriessen's VS Code snippets.",
   "keywords": [],
   "activationCommands": {},
   "repository": "https://github.com/hokieboat/aurora-snippets",
