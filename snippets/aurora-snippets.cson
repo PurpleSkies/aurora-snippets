@@ -118,7 +118,7 @@
 	'aurora:spellcasting':
 		'prefix': 'aurora:spellcasting'
 		'body': """
-			<spellcasting name=\"${1:spellcaster}\" ability=\"${2|Intelligence,Wisdom,Charisma|}\" prepare=\"${3|false,true|}\">
+			<spellcasting name=\"${1:spellcaster}\" ability=\"${2:Intelligence,Wisdom,Charisma}\" prepare=\"${3:false,true}\">
 			\t<list>${1:spellcaster}</list>
 			</spellcasting>
 		"""
@@ -146,7 +146,7 @@
 	'aurora:action':
 		'prefix': 'aurora:action'
 		'body': """
-			'action=\"${1|Action,Bonus Action,Reaction|}\"'
+			'action=\"${1:Action,Bonus Action,Reaction}\"'
 		"""
 
 	'aurora:usage':
@@ -300,14 +300,14 @@
 	'aurora:stat:innate-speed':
 		'prefix': 'aurora:stat'
 		'body': """
-			<stat name=\"innate speed\" value=\"${1|30,25|}\" bonus=\"base\" />
+			<stat name=\"innate speed\" value=\"${1:30,25}\" bonus=\"base\" />
 		"""
 
 	'aurora:stat:min1':
 		'prefix': 'aurora:stat:min1'
 		'body': """
 			<stat name=\"${1:name}\" value=\"1\" bonus=\"${3:base}\" />
-			<stat name=\"${1:name}\" value=\"${2|strength:modifier,dexterity:modifier,constitution:modifier,intelligence:modifier,wisdom:modifier,charisma:modifier|}\" bonus=\"${3:base}\" />
+			<stat name=\"${1:name}\" value=\"${2:strength,dexterity,constitution,intelligence,wisdom,charisma}:modifier\" bonus=\"${3:base}\" />
 		"""
 
 	'aurora:stat:dc':
@@ -315,13 +315,13 @@
 		'body': """
 			<stat name=\"${1:name}:dc\" value=\"8\" />
 			<stat name=\"${1:name}:dc\" value=\"proficiency\" />
-			<stat name=\"${1:name}:dc\" value=\"${2|strength:modifier,dexterity:modifier,constitution:modifier,intelligence:modifier,wisdom:modifier,charisma:modifier|}\" />
+			<stat name=\"${1:name}:dc\" value=\"${2:strength,dexterity,constitution,intelligence,wisdom,charisma}:modifier\" />
 		"""
 
 	'aurora:ability:mod':
 		'prefix': 'aurora:ability:mod'
 		'body': """
-			'${1|strength:modifier,dexterity:modifier,constitution:modifier,intelligence:modifier,wisdom:modifier,charisma:modifier|}'
+			'${1:strength,dexterity,constitution,intelligence,wisdom,charisma}:modifier'
 		"""
 
 	'aurora:level':
@@ -473,7 +473,7 @@
 	'aurora:setter-hd':
 		'prefix': 'aurora:setter-hd'
 		'body': """
-			<set name=\"hd\">${1|d4,d6,d8,d10,d12|}</set>
+			<set name=\"hd\">${1:d4,d6,d8,d10,d12}</set>
 		"""
 
 	'aurora:setters-names':
@@ -527,7 +527,7 @@
 	'aurora:stat-ac-misc':
 		'prefix': 'aurora:stat-ac-misc'
 		'body': """
-			<stat name=\"ac:misc\" value=\"${1|1,2,3|}\" />
+			<stat name=\"ac:misc\" value=\"${1:1,2,3}\" />
 		"""
 
 	'aurora:element-supports':
@@ -551,7 +551,7 @@
 	'aurora:element-supports-archetype':
 		'prefix': 'aurora:element-supports-archetype'
 		'body': """
-			<supports>${1|Primal Path,Bard College,Divine Domain,Druid Circle,Martial Archetype,Monastic Tradition,Sacred Oath,Ranger Archetype,Roguish Archetype,Sorcerous Origin,Otherworldly Patron,Arcane Tradition,Artificer Specialist|}</supports>
+			<supports>${1:Primal Path,Bard College,Divine Domain,Druid Circle,Martial Archetype,Monastic Tradition,Sacred Oath,Ranger Archetype,Roguish Archetype,Sorcerous Origin,Otherworldly Patron,Arcane Tradition,Artificer Specialist}</supports>
 		"""
 
 	'aurora:grant-language-common':

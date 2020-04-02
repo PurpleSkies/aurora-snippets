@@ -55,7 +55,7 @@
 			\t\t<div element=\"ID____\" />
 			\t</description>
 			\t<setters>
-			\t\t<set name=\"hd\">${7|d4,d6,d8,d10,d12|}</set>
+			\t\t<set name=\"hd\">${7:d4,d6,d8,d10,d12}</set>
 			\t</setters>
 			\t<sheet display=\"false\" />
 			\t<rules>

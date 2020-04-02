@@ -27,14 +27,14 @@
   		'prefix': 'aurora:element-spell'
   		'body': """
   			<element name=\"${1:name}\" type=\"Spell\" source=\"${2:source}\" id=\"ID_${3:author_source}_SPELL_${1:name}\">
-  			\t<supports>${supports}</supports>
+  			\t<supports>${15:Class}</supports>
   			\t<description>
   			\t\t<p>$0</p>
   			\t</description>
   			\t<setters>
   			\t\t<set name=\"keywords\"></set>
   			\t\t<set name=\"level\">${4:level}</set>
-  			\t\t<set name=\"school\">${5|Evocation,Conjuration,Enchantment,Transmutation,Illusion,Necromancy,Abjuration,Divination|}</set>
+  			\t\t<set name=\"school\">${5:Evocation,Conjuration,Enchantment,Transmutation,Illusion,Necromancy,Abjuration,Divination}</set>
   			\t\t<set name=\"time\">${6:time}</set>
   			\t\t<set name=\"range\">${7:range}</set>
   			\t\t<set name=\"duration\">${8:duration}</set>
@@ -194,7 +194,7 @@
   		'prefix': 'aurora:element-archetype'
   		'body': """
   			<element name=\"${1:name}\" type=\"Archetype\" source=\"${2:source}\" id=\"ID_${3:author_source}_ARCHETYPE_${1:name}\">
-  			\t<supports>${4|Primal Path,Bard College,Divine Domain,Druid Circle,Martial Archetype,Monastic Tradition,Sacred Oath,Ranger Archetype,Roguish Archetype,Sorcerous Origin,Otherworldly Patron,Arcane Tradition,Artificer Specialist|}</supports>
+  			\t<supports>${4:Primal Path,Bard College,Divine Domain,Druid Circle,Martial Archetype,Monastic Tradition,Sacred Oath,Ranger Archetype,Roguish Archetype,Sorcerous Origin,Otherworldly Patron,Arcane Tradition,Artificer Specialist}</supports>
   			\t<description>
   			\t\t<p>$0</p>
   			\t\t<p class=\"indent\"></p>
@@ -268,8 +268,8 @@
   		'prefix': 'aurora:spellcasting-center-description'
   		'body': """
   			<center>
-  			\t<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your ${1|Intelligence,Wisdom,Charisma|} modifier</p>
-  			\t<p><strong>Spell attack modifier</strong> = your proficiency bonus + your ${1|Intelligence,Wisdom,Charisma|} modifier</p>
+  			\t<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your ${1:Intelligence,Wisdom,Charisma} modifier</p>
+  			\t<p><strong>Spell attack modifier</strong> = your proficiency bonus + your ${1:Intelligence,Wisdom,Charisma} modifier</p>
   			</center>
   		"""
 
@@ -342,5 +342,3 @@
   			\t</spellcasting>
   			</element>
   		"""
-
-  

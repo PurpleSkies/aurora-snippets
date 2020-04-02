@@ -6,10 +6,10 @@
 			<element name=\"${1:name}\" type=\"Class Feature\" source=\"${2:source}\" id=\"ID_ABBR_CLASS_FEATURE_FIGHTING_STYLE_${1:name}\">
 			\t<supports>Fighting Style</supports>
 			\t<description>
-			\t\t<p>${description}</p>
+			\t\t<p>${3:description}</p>
 			\t</description>
 			\t<sheet>
-			\t\t<description>${description}</description>
+			\t\t<description>${3:description}</description>
 			\t</sheet>
 			</element>
 		"""
@@ -20,7 +20,7 @@
 			<element name=\"${1:name}\" type=\"Class Feature\" source=\"${2:source}\" id=\"ID_${2:author_source}_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOID_${1:name}\">
 			\t<supports>Humanoid Favored Enemy</supports>
 			\t<description>
-			\t\t<p>${description}</p>
+			\t\t<p>${3:description}</p>
 			\t</description>
 			</element>
 		"""
