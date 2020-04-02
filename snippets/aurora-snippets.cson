@@ -1,1 +1,567 @@
 '.text.xml':
+
+	'aurora:elements':
+		'prefix': 'aurora:elements'
+		'description': 'create elements file base structure'
+		'body': """
+			<?xml version=\"1.0\" encoding=\"utf-8\" ?>
+			<elements>
+			\t<info>
+			\t\t<name>${1}</name>
+			\t\t<update version=\"0.0.1\">
+			\t\t\t<file name=\"${2:$TM_FILENAME}\" url=\"${3:https://raw.githubusercontent.com/aurorabuilder/elements/master}/${2:$TM_FILENAME}\" />
+			\t\t</update>
+			\t</info>
+			\t
+			\t$0
+			\t
+			</elements>
+		"""
+
+	'aurora:elements-noinfo':
+		'prefix': 'aurora:elements-noinfo'
+		'description': 'create elements file base structure without info block'
+		'body': """
+			<?xml version=\"1.0\" encoding=\"utf-8\" ?>
+			<elements>
+			\t
+			\t$0
+			\t
+			</elements>
+		"""
+
+	'aurora:index':
+		'prefix': 'aurora:index'
+		'description': 'create index file base structure'
+		'body': """
+			<?xml version=\"1.0\" encoding=\"utf-8\" ?>
+			<index>
+			\t<info>
+			\t\t<name>${1}</name>
+			\t\t<update version=\"0.0.1\">
+			\t\t\t<file name=\"$TM_FILENAME\" url=\"https://raw.githubusercontent.com/aurorabuilder/elements/master/${2}/$TM_FILENAME\" />
+			\t\t</update>
+			\t</info>
+			\t<files>
+			\t\t<file name=\"${3:filename}.xml\" url=\"https://raw.githubusercontent.com/aurorabuilder/elements/master/${2}/$TM_FILENAME_BASE/${3:filename}.xml\" />$0
+			\t</files>
+			</index>
+		"""
+
+	'aurora:file-entry':
+		'prefix': 'aurora:file-entry'
+		'body': """
+			<file name=\"${1:name}\" url=\"${2:baseurl}/${1:name}\" />
+		"""
+
+	'aurora:todo':
+		'prefix': 'aurora:todo'
+		'body': """
+			<!-- todo: ${description} -->
+		"""
+
+	'aurora:element':
+		'prefix': 'aurora:element'
+		'body': """
+			<element name=\"${1:name}\" type=\"${2:type}\" source=\"${3:source}\" id=\"ID_${4:author_source}_${2:type}_${1:name}\">
+			\t<description>
+			\t\t<p>${5:description}</p>
+			\t</description>
+			\t<sheet>
+			\t\t<description>${5:description}</description>
+			\t</sheet>
+			</element>
+		"""
+
+	'aurora:element-sheet':
+		'prefix': 'aurora:element-sheet'
+		'body': """
+			<sheet>
+			\t<description>${1:description}</description>
+			</sheet>
+		"""
+
+	'aurora:sheet-false':
+		'prefix': 'aurora:sheet-false'
+		'body': """
+			<sheet display=\"false\" />
+		"""
+
+	'aurora:element-equipment':
+		'prefix': 'aurora:element-equipment'
+		'body': """
+			<equipment>
+			\t<description>${1:description}</description>
+			</equipment>
+		"""
+
+	'aurora:p-element':
+		'prefix': 'aurora:p-element'
+		'body': """
+			<p element=\"${1:id}\" />
+		"""
+
+	'aurora:div-element':
+		'prefix': 'aurora:div-element'
+		'body': """
+			<div element=\"${1:id}\" />
+		"""
+
+	'aurora:div-reference':
+		'prefix': 'aurora:div-reference'
+		'body': """
+			<div class=\"reference\">
+			\t<div element=\"${1:id}\" />
+			</div>
+		"""
+
+	'aurora:spellcasting':
+		'prefix': 'aurora:spellcasting'
+		'body': """
+			<spellcasting name=\"${1:spellcaster}\" ability=\"${2|Intelligence,Wisdom,Charisma|}\" prepare=\"${3|false,true|}\">
+			\t<list>${1:spellcaster}</list>
+			</spellcasting>
+		"""
+
+	'aurora:spellcasting-extend':
+		'prefix': 'aurora:spellcasting-extend'
+		'body': """
+			<spellcasting name=\"${1:spellcaster}\" extend=\"true\">
+			\t<extend>${2:extend}</extend>
+			</spellcasting>
+		"""
+
+	'aurora:df':
+		'prefix': 'aurora:df'
+		'body': """
+			'display=\"false\"'
+		"""
+
+	'aurora:compendium:df':
+		'prefix': 'aurora:compendium:df'
+		'body': """
+			<compendium display=\"false\" />
+		"""
+
+	'aurora:action':
+		'prefix': 'aurora:action'
+		'body': """
+			'action=\"${1|Action,Bonus Action,Reaction|}\"'
+		"""
+
+	'aurora:usage':
+		'prefix': 'aurora:usage'
+		'body': """
+			'usage=\"${usage}\"'
+		"""
+
+	'aurora:usage-short':
+		'prefix': 'aurora:usage-short'
+		'body': """
+			'usage=\"${1:1}/Short Rest\"'
+		"""
+
+	'aurora:usage-long':
+		'prefix': 'aurora:usage-long'
+		'body': """
+			'usage=\"${1:1}/Long Rest\"'
+		"""
+
+	'aurora:usage-cd':
+		'prefix': 'aurora:usage-cd'
+		'body': """
+			'usage=\"Channel Divinity\"'
+		"""
+
+	'aurora:element-rules':
+		'prefix': 'aurora:element-rules'
+		'body': """
+			<rules>
+			\t$0
+			</rules>
+		"""
+
+	'aurora:element-setters':
+		'prefix': 'aurora:element-setters'
+		'body': """
+			<setters>
+			\t$0
+			</setters>
+		"""
+
+	'aurora:setter':
+		'prefix': 'aurora:setter'
+		'body': """
+			<set name=\"${name}\">$0</set>
+		"""
+
+	'aurora:grant':
+		'prefix': 'aurora:grant'
+		'body': """
+			<grant type=\"${1:type}\" id=\"${2:id}\" />
+		"""
+
+	'aurora:grant-size-medium':
+		'prefix': 'aurora:grant-size-medium'
+		'body': """
+			<grant type=\"Size\" id=\"ID_SIZE_MEDIUM\" />
+		"""
+
+	'aurora:grant-size-small':
+		'prefix': 'aurora:grant-size-small'
+		'body': """
+			<grant type=\"Size\" id=\"ID_SIZE_SMALL\" />
+		"""
+
+	'aurora:grant-vision-darkvision':
+		'prefix': 'aurora:grant-vision-darkvision'
+		'body': """
+			<grant type=\"Vision\" id=\"ID_VISION_DARKVISION\" />
+		"""
+
+	'aurora:grant-class-feature':
+		'prefix': 'aurora:grant-class-feature'
+		'body': """
+			<grant type=\"${1:Class Feature}\" id=\"${2:id}\" level=\"${3:level}\" />
+		"""
+
+	'aurora:grant-archetype-feature':
+		'prefix': 'aurora:grant-archetype-feature'
+		'body': """
+			<grant type=\"${1:Archetype Feature}\" id=\"${2:id}\" level=\"${3:level}\" />
+		"""
+
+	'aurora:select':
+		'prefix': 'aurora:select'
+		'body': """
+			<select type=\"${1:type}\" name=\"${2:name}\" supports=\"${3:supports}\" />
+		"""
+
+	'aurora:select-language':
+		'prefix': 'aurora:select-language'
+		'body': """
+			<select type=\"Language\" name=\"Language, $0\" supports=\"Standard||Exotic\" />
+		"""
+
+	'aurora:select-skill-proficiency':
+		'prefix': 'aurora:select-skill-proficiency'
+		'body': """
+			<select type=\"Proficiency\" name=\"Skill Proficiency, ${1:name}\" supports=\"$0\" />
+		"""
+
+	'aurora:select-tool-proficiency':
+		'prefix': 'aurora:select-tool-proficiency'
+		'body': """
+			<select type=\"Proficiency\" name=\"Tool Proficiency, ${1:name}\" supports=\"$0\" />
+		"""
+
+	'aurora:stat':
+		'prefix': 'aurora:stat'
+		'body': """
+			<stat name=\"${1:name}\" value=\"${2:value}\" />
+		"""
+
+	'aurora:stat:strength':
+		'prefix': 'aurora:stat:strength'
+		'body': """
+			<stat name=\"strength\" value=\"${1:2}\" />
+		"""
+
+	'aurora:stat:dexterity':
+		'prefix': 'aurora:stat:dexterity'
+		'body': """
+			<stat name=\"dexterity\" value=\"${1:2}\" />
+		"""
+
+	'aurora:stat:constitution':
+		'prefix': 'aurora:stat:constitution'
+		'body': """
+			<stat name=\"constitution\" value=\"${1:2}\" />
+		"""
+
+	'aurora:stat:intelligence':
+		'prefix': 'aurora:stat:intelligence'
+		'body': """
+			<stat name=\"intelligence\" value=\"${1:2}\" />
+		"""
+
+	'aurora:stat:wisdom':
+		'prefix': 'aurora:stat:wisdom'
+		'body': """
+			<stat name=\"wisdom\" value=\"${1:2}\" />
+		"""
+
+	'aurora:stat:charisma':
+		'prefix': 'aurora:stat:charisma'
+		'body': """
+			<stat name=\"charisma\" value=\"${1:2}\" />
+		"""
+
+	'aurora:stat:innate-speed':
+		'prefix': 'aurora:stat'
+		'body': """
+			<stat name=\"innate speed\" value=\"${1|30,25|}\" bonus=\"base\" />
+		"""
+
+	'aurora:stat:min1':
+		'prefix': 'aurora:stat:min1'
+		'body': """
+			<stat name=\"${1:name}\" value=\"1\" bonus=\"${3:base}\" />
+			<stat name=\"${1:name}\" value=\"${2|strength:modifier,dexterity:modifier,constitution:modifier,intelligence:modifier,wisdom:modifier,charisma:modifier|}\" bonus=\"${3:base}\" />
+		"""
+
+	'aurora:stat:dc':
+		'prefix': 'aurora:stat:dc'
+		'body': """
+			<stat name=\"${1:name}:dc\" value=\"8\" />
+			<stat name=\"${1:name}:dc\" value=\"proficiency\" />
+			<stat name=\"${1:name}:dc\" value=\"${2|strength:modifier,dexterity:modifier,constitution:modifier,intelligence:modifier,wisdom:modifier,charisma:modifier|}\" />
+		"""
+
+	'aurora:ability:mod':
+		'prefix': 'aurora:ability:mod'
+		'body': """
+			'${1|strength:modifier,dexterity:modifier,constitution:modifier,intelligence:modifier,wisdom:modifier,charisma:modifier|}'
+		"""
+
+	'aurora:level':
+		'prefix': 'aurora:level'
+		'body': """
+			'level=\"${level}\"'
+		"""
+
+	'aurora:bonus':
+		'prefix': 'aurora:bonus'
+		'body': """
+			'bonus=\"${bonus}\"'
+		"""
+
+	'aurora:spellcasting-attribute':
+		'prefix': 'aurora:spellcasting-attribute'
+		'body': """
+			'spellcasting=\"${spellcaster}\"'
+		"""
+
+	'aurora:table':
+		'prefix': 'aurora:table'
+		'body': """
+			<table>
+			\t<thead>
+			\t\t<tr><td>${1:column1}</td><td>${2:column2}</td></tr>
+			\t</thead>
+			\t<tr><td>data1</td><td>data1</td></tr>
+			\t<tr><td>data2</td><td>data2</td></tr>
+			\t<tr><td>data3</td><td>data3</td></tr>
+			\t<tr><td>data4</td><td>data4</td></tr>
+			\t<tr><td>data5</td><td>data5</td></tr>
+			\t<tr><td>data6</td><td>data6</td></tr>
+			\t<tr><td>data7</td><td>data7</td></tr>
+			\t<tr><td>data8</td><td>data8</td></tr>
+			</table>
+		"""
+
+	'aurora:table-d4':
+		'prefix': 'aurora:table-d4'
+		'body': """
+			<table>
+			\t<thead>
+			\t\t<tr><td>d4</td><td>${1:column2}</td></tr>
+			\t</thead>
+			\t<tr><td>1</td><td>data1</td></tr>
+			\t<tr><td>2</td><td>data2</td></tr>
+			\t<tr><td>3</td><td>data3</td></tr>
+			\t<tr><td>4</td><td>data4</td></tr>
+			</table>
+		"""
+
+	'aurora:table-d6':
+		'prefix': 'aurora:table-d6'
+		'body': """
+			<table>
+			\t<thead>
+			\t\t<tr><td>d6</td><td>${1:column2}</td></tr>
+			\t</thead>
+			\t<tr><td>1</td><td>data1</td></tr>
+			\t<tr><td>2</td><td>data2</td></tr>
+			\t<tr><td>3</td><td>data3</td></tr>
+			\t<tr><td>4</td><td>data4</td></tr>
+			\t<tr><td>5</td><td>data5</td></tr>
+			\t<tr><td>6</td><td>data6</td></tr>
+			</table>
+		"""
+
+	'aurora:table-d8':
+		'prefix': 'aurora:table-d8'
+		'body': """
+			<table>
+			\t<thead>
+			\t\t<tr><td>d8</td><td>${1:column2}</td></tr>
+			\t</thead>
+			\t<tr><td>1</td><td>data1</td></tr>
+			\t<tr><td>2</td><td>data2</td></tr>
+			\t<tr><td>3</td><td>data3</td></tr>
+			\t<tr><td>4</td><td>data4</td></tr>
+			\t<tr><td>5</td><td>data5</td></tr>
+			\t<tr><td>6</td><td>data6</td></tr>
+			\t<tr><td>7</td><td>data7</td></tr>
+			\t<tr><td>8</td><td>data8</td></tr>
+			</table>
+		"""
+
+	'aurora:table-d10':
+		'prefix': 'aurora:table-d10'
+		'body': """
+			<table>
+			\t<thead>
+			\t\t<tr><td>d10</td><td>${1:column2}</td></tr>
+			\t</thead>
+			\t<tr><td>1</td><td>data1</td></tr>
+			\t<tr><td>2</td><td>data2</td></tr>
+			\t<tr><td>3</td><td>data3</td></tr>
+			\t<tr><td>4</td><td>data4</td></tr>
+			\t<tr><td>5</td><td>data5</td></tr>
+			\t<tr><td>6</td><td>data6</td></tr>
+			\t<tr><td>7</td><td>data7</td></tr>
+			\t<tr><td>8</td><td>data8</td></tr>
+			\t<tr><td>9</td><td>data7</td></tr>
+			\t<tr><td>10</td><td>data8</td></tr>
+			</table>
+		"""
+
+	'aurora:table-d12':
+		'prefix': 'aurora:table-d12'
+		'body': """
+			<table>
+			\t<thead>
+			\t\t<tr><td>d12</td><td>${1:column2}</td></tr>
+			\t</thead>
+			\t<tr><td>1</td><td>data1</td></tr>
+			\t<tr><td>2</td><td>data2</td></tr>
+			\t<tr><td>3</td><td>data3</td></tr>
+			\t<tr><td>4</td><td>data4</td></tr>
+			\t<tr><td>5</td><td>data5</td></tr>
+			\t<tr><td>6</td><td>data6</td></tr>
+			\t<tr><td>7</td><td>data7</td></tr>
+			\t<tr><td>8</td><td>data8</td></tr>
+			\t<tr><td>9</td><td>data5</td></tr>
+			\t<tr><td>10</td><td>data6</td></tr>
+			\t<tr><td>11</td><td>data7</td></tr>
+			\t<tr><td>12</td><td>data8</td></tr>
+			</table>
+		"""
+
+	'aurora:table-d100':
+		'prefix': 'aurora:table-d100'
+		'body': """
+			<table>
+			\t<thead>
+			\t\t<tr><td>d100</td><td>${1:column2}</td></tr>
+			\t</thead>
+			\t<tr><td>01-10</td><td>data1</td></tr>
+			\t<tr><td>11-20</td><td>data2</td></tr>
+			\t<tr><td>21-30</td><td>data3</td></tr>
+			\t<tr><td>31-40</td><td>data4</td></tr>
+			\t<tr><td>41-50</td><td>data5</td></tr>
+			\t<tr><td>51-60</td><td>data6</td></tr>
+			\t<tr><td>61-70</td><td>data7</td></tr>
+			\t<tr><td>71-80</td><td>data8</td></tr>
+			\t<tr><td>81-90</td><td>data9</td></tr>
+			\t<tr><td>91-00</td><td>data0</td></tr>
+			</table>
+		"""
+
+	'aurora:setter-hd':
+		'prefix': 'aurora:setter-hd'
+		'body': """
+			<set name=\"hd\">${1|d4,d6,d8,d10,d12|}</set>
+		"""
+
+	'aurora:setters-names':
+		'prefix': 'aurora:setters-names'
+		'body': """
+			<set name=\"names\" type=\"male\">${1:male}</set>
+			<set name=\"names\" type=\"female\">${2:female}</set>
+			<set name=\"names-format\">{{name}}</set>
+		"""
+
+	'aurora:setters-names-custom':
+		'prefix': 'aurora:setters-names-custom'
+		'body': """
+			<set name=\"names\" type=\"custom\">${1:custom}</set>
+			<set name=\"names-format\">{{custom}}</set>
+		"""
+
+	'aurora:p-feature':
+		'prefix': 'aurora:p-feature'
+		'body': """
+			<p class=\"indent\"><strong><em>${1:feature}.</em></strong> ${2:description}</p>
+		"""
+
+	'aurora:p-at-higher-levels':
+		'prefix': 'aurora:p-at-higher-levels'
+		'body': """
+			<p class=\"indent\"><strong><em>At Higher Levels.</em></strong> ${2:description}</p>
+		"""
+
+	'aurora:p-prerequites':
+		'prefix': 'aurora:p-prerequites'
+		'body': """
+			<p><em>Prerequisite: ${2:prerequites}</em></p>
+		"""
+
+	'aurora:h4':
+		'prefix': 'aurora:h4'
+		'body': """
+			<h4>${1:heading}</h4>
+			<p>$0</p>
+			<p class=\"indent\"></p>
+		"""
+
+	'aurora:stat-ac-calculation':
+		'prefix': 'aurora:stat-ac-calculation'
+		'body': """
+			<stat name=\"ac:${lowecase_name}\" value=\"${value}\" />
+			<stat name=\"ac:calculation\" value=\"ac:${lowecase_name}\" bonus=\"calculation\" />
+		"""
+
+	'aurora:stat-ac-misc':
+		'prefix': 'aurora:stat-ac-misc'
+		'body': """
+			<stat name=\"ac:misc\" value=\"${1|1,2,3|}\" />
+		"""
+
+	'aurora:element-supports':
+		'prefix': 'aurora:element-supports'
+		'body': """
+			<supports>$0</supports>
+		"""
+
+	'aurora:element-requirements':
+		'prefix': 'aurora:element-requirements'
+		'body': """
+			<requirements>$0</requirements>
+		"""
+
+	'aurora:element-prerequisite':
+		'prefix': 'aurora:element-prerequisite'
+		'body': """
+			<prerequisite>$0</prerequisite>
+		"""
+
+	'aurora:element-supports-archetype':
+		'prefix': 'aurora:element-supports-archetype'
+		'body': """
+			<supports>${1|Primal Path,Bard College,Divine Domain,Druid Circle,Martial Archetype,Monastic Tradition,Sacred Oath,Ranger Archetype,Roguish Archetype,Sorcerous Origin,Otherworldly Patron,Arcane Tradition,Artificer Specialist|}</supports>
+		"""
+
+	'aurora:grant-language-common':
+		'prefix': 'aurora:grant-language-common'
+		'body': """
+			<grant type=\"Language\" id=\"ID_LANGUAGE_COMMON\" />
+		"""
+
+	'aurora:grant-language':
+		'prefix': 'aurora:grant-language'
+		'body': """
+			<grant type=\"Language\" id=\"$0\" />
+		"""

@@ -1,5 +1,5 @@
 '.text.xml':
-  
+
   'aurora:grant-condition-resistance-bludgeoning':
     'prefix': 'aurora:grant-condition-resistance-bludgeoning'
     'body': """
