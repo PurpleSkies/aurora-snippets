@@ -1,18 +1,14 @@
 {
   "name": "aurora-snippets",
   "main": "./lib/aurora-snippets",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Adds snippets for creating Aurora .xml files",
-  "keywords": [
-  ],
-  "activationCommands": {
-
-  },
+  "keywords": [],
+  "activationCommands": {},
   "repository": "https://github.com/hokieboat/aurora-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
