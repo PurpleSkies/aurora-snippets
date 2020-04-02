@@ -1,5 +1,5 @@
 '.text.xml':
-  {
+
   	'aurora:element-item':
   		'prefix': 'aurora:element-item'
   		'body': """
@@ -31,8 +31,6 @@
   			\t</setters>
   			</element>
   		"""
-
-
 
   	'aurora:element-magic-item':
   		'prefix': 'aurora:element-magic-item'
@@ -99,8 +97,6 @@
   			\t</setters>
   			</element>
   		"""
-
-
 
   	'aurora:element-magic-item-armor':
   		'prefix': 'aurora:element-magic-item-armor'
@@ -308,5 +304,4 @@
   		'body': """
   			<stat name=\"ac:shield\" value=\"${1|1,2,3|}\" bonus=\"enhancement\" />
   		"""
-  	}
-  }
+  	
